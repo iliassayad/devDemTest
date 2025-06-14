@@ -23,6 +23,11 @@ public class Devis {
 
     private LocalDate dateDevis;
 
+    //Statut du devis
+    @Enumerated(EnumType.STRING)
+    @Builder.Default
+    private DevisStatus statut = DevisStatus.BROUILLON;
+
     //date de depart
     private boolean dateDepartFlexible;
     private LocalDate dateDepart;

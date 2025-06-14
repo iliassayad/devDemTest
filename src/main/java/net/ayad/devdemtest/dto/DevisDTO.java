@@ -2,6 +2,7 @@ package net.ayad.devdemtest.dto;
 
 import lombok.Builder;
 import lombok.Data;
+import net.ayad.devdemtest.model.DevisStatus;
 import net.ayad.devdemtest.model.Formule;
 
 import java.time.LocalDate;
@@ -14,8 +15,12 @@ public class DevisDTO {
     private Long clientId;
     private String clientNom;
     private String clientEmail;
+    private String clientTelephone;
 
     private LocalDate dateDevis;
+
+
+    private DevisStatus statut = DevisStatus.BROUILLON;
 
     // Dates départ
     private boolean dateDepartFlexible;

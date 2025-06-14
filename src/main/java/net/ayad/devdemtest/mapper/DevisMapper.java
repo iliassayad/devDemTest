@@ -19,6 +19,7 @@ public abstract class DevisMapper {
     @Mapping(source = "client.id", target = "clientId")
     @Mapping(source = "client.nom", target = "clientNom")
     @Mapping(source = "client.email", target = "clientEmail")
+    @Mapping(source = "client.telephone", target = "clientTelephone")
     public abstract DevisDTO toDevisDTO(Devis devis);
 
     //Devis DTO --> Devis entity
