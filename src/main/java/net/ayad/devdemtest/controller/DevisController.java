@@ -12,7 +12,7 @@ import net.ayad.devdemtest.model.DevisStatus;
 import java.util.List;
 import java.util.Optional;
 
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "http://localhost:5174")
 @RestController
 @RequestMapping("/api/devis")
 @RequiredArgsConstructor
